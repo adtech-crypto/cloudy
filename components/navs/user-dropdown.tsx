@@ -41,16 +41,6 @@ export const UserDropdown = (): JSX.Element => {
 					</button>
 
 					<hr className="border-accent/20 dark:border-accent-dark/20" />
-
-					<button
-						title={!isAuthEnabled ? 'Auth is not available' : ''}
-						disabled={!isAuthEnabled}
-						type="button"
-						className="flex w-full flex-row items-center justify-center rounded-md border-1 border-transparent px-2 py-1 hover:border-accent/60 disabled:cursor-not-allowed disabled:text-secondary/50 dark:hover:border-accent-dark/60 dark:disabled:text-secondary-dark/50"
-						onClick={() => isAuthEnabled && (user ? signOut() : signIn())}
-					>
-						{user ? 'Sign Out' : 'Sign In'}
-					</button>
 				</div>
 			</dialog>
 		</div>
