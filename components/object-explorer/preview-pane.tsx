@@ -9,6 +9,12 @@ export const PreviewPane = () => {
 	const { isPreviewPaneActive } = useSettings();
 	const { objects, selectedObjects } = useObjectExplorer();
 
+	const handleCopyPath = () => {
+		const path = process.env.NEXT_PUBLIC_R2_HOST + '/' + (item?.path ?? '');
+		console.log(path);
+		navigator.clipboard.writeText(path);
+	};
+
 	if (!isPreviewPaneActive) {
 		return null;
 	}
@@ -42,6 +48,11 @@ export const PreviewPane = () => {
 						<span>{item.getSize()}</span>
 						<span className="text-sm font-medium">Last Modified</span>
 						<span>{item.getLastModified()?.toLocaleDateString() ?? ''}</span>
+						<div>
+							<button type="button" className="rounded-md bg-secondary px-2 py-1 text-sm" onClick={() => handleCopyPath()}>
+								复制
+							</button>
+						</div>
 					</div>
 				)}
 			</div>

@@ -8,6 +8,7 @@ declare global {
 			AUTH_GITHUB_SECRET?: string;
 			CLOUDY_D1?: D1Database;
 			DEV_CLOUDY_D1_BINDING_NAME?: string;
+			NEXT_PUBLIC_R2_HOST?: string;
 		}
 	}
 }

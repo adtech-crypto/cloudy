@@ -12,3 +12,5 @@ database_id = "084098b9-f3fa-45f1-ae18-2071d2f66b06"
 binding = "FUNPUB_R2"
 bucket_name = "funpub"
 
+[vars]
+R2_HOST = "https://s3.fspcdn.net"
