@@ -1,0 +1,16 @@
+name = "r2-browser"
+pages_build_output_dir = ".vercel/output/static"
+compatibility_date = "2023-08-27"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "FUNPUB_D1"
+database_name = "batch_mj_consumer"
+database_id = "084098b9-f3fa-45f1-ae18-2071d2f66b06"
+
+[[r2_buckets]]
+binding = "FUNPUB_R2"
+bucket_name = "funpub"
+
+[vars]
+AUTH_SECRET = "lkSKD..-+L^SW.^*JKHh4563"

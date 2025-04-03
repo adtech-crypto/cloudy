@@ -19,14 +19,6 @@ export const SideNav = (): JSX.Element => {
 			<h4>Cloudy</h4>
 
 			<UserDropdown />
-
-			<SideNavSection>
-				<NavLink href="/">
-					<Monitor weight="bold" className="h-5 w-5" />
-					Overview
-				</NavLink>
-			</SideNavSection>
-
 			<SideNavSection>
 				<span className="text-sm font-semibold">R2 Buckets</span>
 
